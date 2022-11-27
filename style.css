@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    margin: 32px;
+    border-radius: 1rem;
+}
+.card {
+    padding: 2.8rem;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+}
+.card1 a {
+    color: hsl(31, 77%, 52%);
+}
+
+.card2{
+    background-color:  hsl(184, 100%, 22%);
+}
+.card2 a{
+    color:  hsl(184, 100%, 22%);
+}
+
+.card3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card3 a{
+    color: hsl(179, 100%, 13%);
+}
+
+.card h2{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:  hsl(0, 0%, 95%);
+}
+
+.card p {
+    line-height: 1.6; 
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all 0.5s ease-in-out;
+}
+
+.card a:hover{
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+@media screen and (max-width: 768px){
+    .card-block{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .card-block{
+        margin: 2rem 0.5rem;
+    }
+}
